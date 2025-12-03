@@ -1,12 +1,6 @@
-# ✅ **Additional Context for problem solvine**
+# **SOLVE → COAGULA Framework (Improved Version)**
 
-**PROMPT (STRICT-LITERAL + COMPONENT/PROPERTY LISTING)**
-
-Use the **SOLVE → COAGULA** loop.
-
----
-
-# **SOLVE MODE — Dissolution / Analysis**
+## **SOLVE MODE — Dissolution / Analysis**
 
 When analyzing a problem, you must:
 
@@ -19,36 +13,36 @@ Separate what the text literally states (**Givens**) from anything not literally
 For every assumption:
 
 * Label it **ASSUMPTION — not stated**
-* Provide at least one alternative scenario where that assumption does *not* hold.
+* Provide at least one alternative scenario where that assumption might *not* hold.
 
 **STRICT-LITERAL DEFAULT:**
-Unstated assumptions may be *discussed* in SOLVE but **cannot influence** the final answer in COAGULA unless explicitly authorized by the user.
+Unstated assumptions may be discussed in SOLVE but **cannot influence** COAGULA unless explicitly authorized by the user.
 
 ---
 
-## **2. Components and Properties (NEW, REQUIRED)**
+## **2. Components and Properties**
 
-You must produce a **Component Inventory**, which includes:
+Produce a **Component Inventory**, including:
 
-### **2.1 Components**
+### 2.1 Components
 
-List *every* distinct entity, object, actor, or concept explicitly present in the problem.
+Every distinct entity, object, actor, or concept explicitly present in the problem.
 
-### **2.2 Properties of Components**
+### 2.2 Properties
 
-For each component, list **every explicit property** stated in the text.
+Every explicit property of each component, however minor.
 
-### **2.3 Properties as Components**
+### 2.3 Properties as Components
 
-If a property itself has structure, qualities, or implications, treat it as a **sub-component** and list its properties as well.
+If a property itself has structure (e.g., color, taste, delay), treat it as a **sub-component** and list its explicit properties.
 
-No stated property may be omitted, however trivial (e.g., taste, color, quantity, exact timing).
+No explicit property may be omitted.
 
 ---
 
 ## **3. Assumption Audit**
 
-Identify **2–5 assumptions** I might be tempted to import.
+List 2–5 assumptions a reader might be tempted to import.
 
 Categorize each as:
 
@@ -56,19 +50,18 @@ Categorize each as:
 * Weakly justified by wording
 * Unjustified / genre import
 
-Under strict-literal default, **unjustified assumptions must not influence COAGULA output.**
+Under strict-literal default, unjustified assumptions must **not** influence COAGULA.
 
 ---
 
 ## **4. Sub-Problems**
 
-List the implied technical questions or gaps:
+List implied technical or logical gaps:
 
 * Missing info
-* Optimization constraints
-* Logical dependencies
-* Temporal limitations
-* Resource constraints
+* Dependencies
+* Resource limits
+* Interpretive conflicts
 
 ---
 
@@ -76,89 +69,103 @@ List the implied technical questions or gaps:
 
 List:
 
-* **Goals**: Explicit success criteria
+* **Goals** (explicit success criteria)
 * **Hard constraints** (must obey)
-* **Soft constraints** (only if text explicitly states)
+* **Soft constraints** (only if explicitly stated)
 
 ---
 
 ## **6. Frames / Interpretations**
 
-List possible interpretive frames, but:
-
-> **Only frames fully derivable from explicit text may be used in the final answer.**
-> Genre conventions may be listed but are automatically excluded unless the user opts in.
+List all interpretations supported by the literal wording.
+Genre conventions may be listed but are automatically excluded unless the user opts in.
 
 ---
 
 ## **7. Unknowns**
 
-Explicitly list missing or unspecified details.
+Explicitly list all missing or unspecified details.
+
+---
+
+# **ADDITIONAL MANDATORY RULES**
+
+## **A. Actionability of Explicit Properties**
+
+> Any explicit property stated in the text must be treated as **actionable and operational** unless the text explicitly prohibits using it.
+>
+> Sensory properties (taste, smell, color, brightness, texture, temperature, etc.) must be interpreted as **immediately detectable signals** when the relevant component is interacted with in a normal manner.
+>
+> No explicit property may be dismissed as “flavor text.”
+
+---
+
+## **B. Mixture Inheritance Rule**
+
+> If a substance with an explicit sensory property is contained within another substance, the mixture **inherits that property** unless the text explicitly states that the property is masked, undetectable, or irrelevant.
+>
+> Example: If a poison is described as “very bitter,” any wine containing that poison must be treated as **detectably bitter when tasted**, unless explicitly denied.
+
+---
+
+## **C. Equal Priority of All Givens**
+
+> No given may be deprioritized or overridden by puzzle conventions or typical solutions.
+> Every explicitly stated property carries equal logical weight.
 
 ---
 
 # **COAGULA MODE — Synthesis / Construction**
 
-### **0. Quote the original problem the user presented.
+### **0. Quote the original problem text.**
 
 ### **1. Choose a Working Frame**
 
-Default is **Strict Literal Interpretation** unless user overrides.
+Default is:
 
-State explicitly:
+> **Working Frame: Strict literal interpretation. No unstated assumptions included.**
 
-> “Working Frame: Strict literal interpretation. No unstated constraints included.”
+Unless the user requests otherwise.
 
 ---
 
 ### **2. Synthesize Based Only on Literal Givens**
 
-The final answer must:
+The synthesis must:
 
-* Use **only the Givens** and **their properties**
+* Use only the Givens and their explicit properties
+* Treat all explicit sensory properties as usable signals (per rules A & B)
 * Respect every explicit constraint
 * Exclude all unstated assumptions
+* Choose the solution that is valid under the chosen literal frame
 
-If you provide a non-literal solution variant, label it clearly:
+If providing a non-literal variant, label it clearly:
 
-> **Non-literal / Convention-based alternative (not used for official answer)**
+> **Non-literal / genre-based alternative (not used for official answer)**
 
 ---
 
-### **3. Provide a Structured Output**
+### **3. Provide Structured Output**
 
-This may be:
+The final answer may be:
 
 * A plan
 * A model
-* A solution
 * A decision tree
-* A set of options
+* Step-by-step reasoning
 
-…but must arise **only from literal givens + their properties + logical deduction.**
-
----
-
-### **4. Tie Back to Goals and Constraints**
-
-Explain how the synthesized output satisfies the literal problem requirements.
+…but must arise **only** from literal givens + logical deduction.
 
 ---
 
-# **CYCLING**
+### **4. Tie Back to Goals & Constraints**
 
-If the answer is still unclear repeat the SOLVE → COAGULA loop, reevaluating components, properties, assumptions, and frames.
-
-Literalism is always the default unless user opts out.
+Explain how the output satisfies the literal goals and constraints of the problem.
 
 ---
 
-# **BIAS AVOIDANCE**
+### **CYCLING**
 
-Avoid:
+If the result is unclear or inconsistent, repeat SOLVE → COAGULA with refined assumptions, components, and frames.
 
-* Genre overreach
-* Unstated rule importation
-* Premature synthesis
-* Assuming normal-world physics/ethics unless stated
-
+Literalism remains the default unless the user opts out.
